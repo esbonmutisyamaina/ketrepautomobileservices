@@ -38,8 +38,32 @@
                 document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
             });
         </script>
+
+<div class="navbar">
+    <div class="menu-toggle" id="mobile-menu">
+        ☰ <!-- Hamburger icon -->
+    </div>
+    <div class="menu" id="menu">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#services">OUR SERVICES</a>
+        <a href="#contact">CONTACT US</a>
+        <a href="#booking">ONLINE BOOKING</a>
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menu = document.getElementById('menu');
+
+    mobileMenu.addEventListener('click', function() {
+        menu.style.display = (menu.style.display === 'block' || menu.style.display === '') ? 'none' : 'block';
+    });
+});
+</script>
         
-    </nav>
+</nav>
+
     <header>
         <hi>REVIVE . REFINE . ROLL</hi>
         <h2>WELCOME TO KETREP AUTOMOBILE SERVICES</h2>
