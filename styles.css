@@ -312,13 +312,24 @@ section {
     padding: 20px;
 }
 
-/* Media query for responsive design */
+/* Media query for desktop screens */
+@media only screen and (min-width: 601px) {
+    .menu-toggle {
+        display: none; /* Hide on larger screens */
+    }
+
+    .menu {
+        display: flex !important; /* Ensure menu is visible on larger screens */
+    }
+}
+
+/* Media query for mobile screens */
 @media only screen and (max-width: 600px) {
     .menu {
-        display: none;
+        display: none; /* Hide the menu on smaller screens */
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Show the hamburger button on smaller screens */
     }
 }
