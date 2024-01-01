@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <h2>WELCOME TO KETREP AUTOMOBILE SERVICES</h2>
     </header>
 
+    <div id="content-container">
     <section id="home">
         <h3>HOME</h3>
         <h4>Expert Vehicle Repair Services</h4>
@@ -237,7 +238,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <button type="submit">Book Now</button>
     </form>
 </section>
-
+</div>
 <script>
     document.getElementById('booking-form').addEventListener('submit', function (event) {
         event.preventDefault();
@@ -245,14 +246,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menu = document.getElementById('menu');
+
+    mobileMenu.addEventListener('click', function() {
+        menu.style.display = (menu.style.display === 'block' || menu.style.display === '') ? 'none' : 'block';
+    });
+});
+</script>
+
+
+
 <footer>
     <p>KETREP Automobile Services</p> 
     <p>Ruiru, Kenya</p>
     <p>Founder and CEO: Samuel Ng'ethe</p>
     <p>Contact: 0742168943</p>
     <p>Email: ketrepautomobile@gmail.com</p>
-   By Afritechwave
+    <p>&copy; 2023 ketrepautomobileservices</p>
 </footer>
+
 
 </body>
 </html>
