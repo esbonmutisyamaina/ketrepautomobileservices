@@ -1,0 +1,39 @@
+/* Add this CSS code to your existing styles or create a new CSS file */
+
+/* Set maximum width for images to prevent them from being too large */
+img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default image spacing */
+    margin: 0 auto; /* Center-align images within their containers */
+}
+
+/* Add additional styles for specific sections or classes if needed */
+/* For example, if you have a class 'large-image', you can add styles like this: */
+.large-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Add this CSS code to your existing styles or create a new CSS file */
+
+/* Set specific sizes for all images */
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Set specific size for the logo */
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/* Add additional styles for specific sections or classes if needed */
+/* For example, if you have a class 'large-image', you can add styles like this: */
+.about {
+    width: 200px;
+    height: 200px;
+}
